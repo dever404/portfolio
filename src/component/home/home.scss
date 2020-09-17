@@ -6,6 +6,22 @@ body{
     &_body {
         height: 100vh;
         display: flex;
+        &_menu {
+            content: "";
+            position: fixed;
+            right: 0;
+            top: 0;
+            background:  rgba(0,0,0,0.1);
+            border-left: 45px solid rgba(0, 0, 0, 0.7);
+            border-top: 45px solid transparent;
+            transition: all .3s ease-in;
+            cursor: pointer;
+            &:hover {
+                box-shadow: 0px 2px 120px 0px rgba(0,0,0,0.64);
+                border-left-width: 60px;
+                border-top-width: 60px;
+            }
+        }
     }
     &_resume{
         margin: auto;
@@ -43,7 +59,7 @@ body{
             img {
                 border-radius: 50%;
                 height: 100%;
-                transition: all .4s ease-in;
+                transition: all .4s;
             }
             &:after {
                 content: "";
@@ -65,9 +81,9 @@ body{
                 overflow: hidden;
                 box-shadow: 0px 2px 170px 20px rgba(0,0,0,0.64);
                 border-color: $primary;
-                border-width: 6px;
+                //border-width: 6px;
                 img {
-                    transform: scale(.98);
+                    transform: scale(.99);
                 }
                 .btn_wa {
                     background: rgba(#000000, .3);

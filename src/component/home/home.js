@@ -16,6 +16,7 @@ const  links = data.map( (data) =>{
 function Home() {
   return (
     <div className='home_body'>
+      <a href="!#" className='home_body_menu'></a>
       <div className='home_resume'>
         <div className='wrapper_img'>
           <a href='https://wa.me/212607739862?text=Bonjour, Je suis tombé sur votre site web' className='btn_wa' target='_blank'>
