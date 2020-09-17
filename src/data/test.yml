@@ -1,0 +1,14 @@
+name: fb
+families:
+  - parents: [name1, name2]
+    children: [child1, child2]
+
+people:
+  name1:
+    name: Name1
+    fullname: Name1
+    gender: m
+  name2:
+    name: Name1
+    fullname: Name1
+    gender: m
