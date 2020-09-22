@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Home from './component/home/home';
-import 'bootstrap/dist/css/bootstrap.css';
+import Header from './component/header/header';
+import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Header/>
   </React.StrictMode>,
   document.getElementById('root')
 );

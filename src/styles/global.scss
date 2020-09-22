@@ -1,0 +1,42 @@
+main {
+    height: 100%;
+    min-height: 500px;
+    overflow-x: hidden;
+    .content {
+        padding-top: 30px;
+        .home_body {
+            margin-top: -30px;
+        }
+    }
+}
+body{
+    background: $primary;
+} 
+
+.social_links {
+    text-align: center;
+    a {
+        padding: 10px;
+        font-size: 20px;
+        color: #000;
+        i {
+            transition: transform .5s ease-in;
+        }
+        &:hover {
+            i {
+                transform : rotate(360deg);
+            }
+        }
+    }
+}
+
+@include media-breakpoint-up(lg) { 
+    .main {
+        .content {
+            padding-top: -30px;
+            .home_body {
+                margin-top: -90px;
+            }
+        }
+    }
+}
