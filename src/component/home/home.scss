@@ -1,12 +1,9 @@
-@import "src/styles/index";
-body{
-    background: $primary;
-} 
+@import "src/styles/index"; 
 .home{
     &_body {
         height: 100vh;
         display: flex;
-        &_menu {
+        /*&_menu {
             content: "";
             position: fixed;
             right: 0;
@@ -21,7 +18,7 @@ body{
                 border-left-width: 60px;
                 border-top-width: 60px;
             }
-        }
+        }*/
     }
     &_resume{
         margin: auto;
@@ -103,25 +100,14 @@ body{
                 }
             }
         }
+        .social_links {
+            a {
+                border-top: 1px solid;
+            }
+        }
     }
     &_info {
         margin-bottom: 20px;
-    }
-    &_social {
-        a {
-            padding: 10px;
-            font-size: 20px;
-            color: #000;
-            border-top: 1px solid;
-            i {
-                transition: transform .5s ease-in;
-            }
-            &:hover {
-                i {
-                    transform : rotate(360deg);
-                }
-            }
-        }
     }
 }
 
@@ -153,4 +139,13 @@ body{
 @keyframes signal {
 	from {background: white;}
 	to {background: red;}
+}
+
+@include media-breakpoint-down(md) { 
+    .name {
+        font-size: 30px;
+    }
+    .job {
+        font-size: 20px;
+    }
 }

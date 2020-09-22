@@ -1,30 +1,64 @@
-import React from 'react';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
-function Header() {
-  return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Navbar</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Features</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Pricing</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-  );
+import Home from '../home/home';
+import About from '../about/about';
+import Blog from '../blog/blog';
+import './header.scss';
+
+class Header extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {isToggleOn: true};
+    this.handleClick = this.handleClick.bind(this);
+  }
+  handleClick() {
+    this.setState(state => ({      
+      isToggleOn: !state.isToggleOn    
+    }));
+  } 
+  render() {
+    return (
+      <Router>
+      <main>
+        <nav className= { this.state.isToggleOn ? 'header_nav hide_menu' : 'header_nav show_menu' }>
+            <a href='#' className='close_menu' onClick={this.handleClick}>
+              <i className={ this.state.isToggleOn ? 'fas fa-bars' : 'fas fa-times'}> </i>
+            </a> 
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <Link to="/" className='nav-link' onClick={this.handleClick} >Home</Link>
+              </li>
+              <li class="nav-item">
+                <Link to="/about" className='nav-link' onClick={this.handleClick} >About</Link>
+              </li>
+              <li class="nav-item">
+                <Link to="/blog" className='nav-link' onClick={this.handleClick} >Blog</Link>
+              </li>
+            </ul>
+        </nav>
+        <div className='content container'>
+          <Switch>
+            <Route path="/blog">
+              <Blog />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch> 
+        </div>
+      </main>  
+      </Router>  
+    );
+  }
 }
 
 export default Header;
