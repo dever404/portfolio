@@ -23,13 +23,13 @@ function About() {
         </div>
         <div className='about_content col-12 col-lg-6'>
           <p>
-            I’m Abdelhakim Er-rafaiy, I’m a Front-end web developer. I'm really interested in Technology & solving technical problems. You can know more about me by reading my articles.
+            I’m Abdelhakim Er-rafaiy, I’m a Front-end web developer. I'm really interested in Technology & solving technical problems.
           </p>
           <p>
-            Currently I'm working full time as a Front-end developer at void.
+            Currently I'm working full time as a Front-end developer at void agency.
           </p>
           <h6 className='bold my-4'>
-            For business inquiries feel free to get in touch with me at:
+            For business inquiries feel free to contact with me:
           </h6>
           <div className='mt-3 about_contact'>
               <a href='tel:0607739862'>

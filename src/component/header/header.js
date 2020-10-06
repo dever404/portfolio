@@ -9,6 +9,7 @@ import {
 import Home from '../home/home';
 import About from '../about/about';
 import Blog from '../blog/blog';
+import Open from '../open/open';
 import './header.scss';
 
 class Header extends React.Component {
@@ -40,10 +41,16 @@ class Header extends React.Component {
               <li class="nav-item">
                 <Link to="/blog" className='nav-link' onClick={this.handleClick} >Blog</Link>
               </li>
+              <li class="nav-item">
+                <Link to="/open" className='nav-link' onClick={this.handleClick} >OSS </Link>
+              </li>
             </ul>
         </nav>
         <div className='content container'>
           <Switch>
+            <Route path="/open">
+              <Open />
+            </Route>
             <Route path="/blog">
               <Blog />
             </Route>
