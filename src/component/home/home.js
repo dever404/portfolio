@@ -17,8 +17,8 @@ function Home() {
     <div className='home_body'>
       <div className='home_resume'>
         <div className='wrapper_img'>
-          <a href='https://wa.me/212607739862?text=Bonjour, Je suis tombé sur votre site web' className='btn_wa' target='_blank'>
-            <i className='fab fa-whatsapp icon-wa'></i>
+          <a href='https://twitter.com/dever4O4' className='btn_wa' target='_blank'>
+            <i className='fab fa-twitter icon-wa'></i>
           </a>
           <img src={logo} alt="ER-RAFAIY Abdelhakim" />
         </div>

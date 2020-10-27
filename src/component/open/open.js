@@ -11,7 +11,7 @@ class open extends React.Component {
   }
 
   componentDidMount() {
-    fetch("https://api.github.com/users/errafaiy/repos")
+    fetch("https://api.github.com/users/dever404/repos")
     .then(res => res.json())
     .then(
       (result) => {

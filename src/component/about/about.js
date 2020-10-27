@@ -32,13 +32,13 @@ function About() {
             For business inquiries feel free to contact with me:
           </h6>
           <div className='mt-3 about_contact'>
-              <a href='tel:0607739862'>
+              <a href='tel:0691061181'>
                 <i class="fas fa-phone-alt mr-2"></i>
-                0607739862
+                0691061181
               </a>
-              <a href='mailto:abdelhakimerrafaiy@gmail.com'>
+              <a href='mailto:abdo.errafaiyy@gmail.com'>
                 <i class="fas fa-envelope-open-text mr-2"></i>
-                abdelhakimerrafaiy@gmail.com
+                abdo.errafaiyy@gmail.com
               </a>
               <a href='#'>
                 <i class="fas fa-map-marker-alt mr-2"></i>
