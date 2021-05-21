@@ -43,12 +43,12 @@ class open extends React.Component {
           <div className='col-8 mx-auto'>
             <div class="row">
               { items.map(item => (
-                  <div class={item.fork == false ? "col-12 mb-2" : "col-12 mb-2" } >
-                    <div class="card">
+                  <div class={item.fork == false ? "col-4 mb-4" : "d-none" } >
+                    <div class="card h-100">
                       <div class="card-body">
                         <h5 class="card-title">{ item.name }</h5>
                         <p class="card-text">{ item.description }</p>
-                        <a className='read-more' href={  item.html_url }></a>
+                        <a className='read-more' href={  item.html_url } target='_blank'></a>
                       </div>
                     </div>
                 </div>

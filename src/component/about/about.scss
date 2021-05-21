@@ -18,8 +18,12 @@
 
     &_contact {
         margin-left: 25px;
+        margin-left: 25px;
+        border-top: 1px solid white;
+        padding-top: 20px;
+
         a {
-            color: black;
+            color: white;
             display: block;
             margin-bottom: 5px;
             font-size: 14px;

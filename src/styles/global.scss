@@ -11,7 +11,27 @@ main {
 }
 body{
     background: $primary;
+    color: white;
 } 
+
+.card {
+    background-color: #1e293b;
+    border: 1px solid rgb(255, 255, 255);
+    transform: scale(1);
+    transition: transform .3s ease-in;
+    &:hover {
+        transform: scale(1.03);
+    }
+}
+
+.card-text {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+hr {
+    background: white;
+}
 
 .read-more {
     position: absolute;
@@ -27,7 +47,7 @@ body{
     a {
         padding: 10px;
         font-size: 20px;
-        color: #000;
+        color: white;
         i {
             transition: transform .5s ease-in;
         }

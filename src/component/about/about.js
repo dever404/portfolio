@@ -16,7 +16,7 @@ function About() {
   return (
     <div className='about_page'>
       <h1 > About me </h1>
-      <hr className='my-4 my-lg-5 pb-lg-4' />
+      <hr className='my-4 my-lg-5' />
       <div className='row'>
         <div className='about_img col-12 col-lg-6'>
           <img src={logo} alt="ER-RAFAIY Abdelhakim" />

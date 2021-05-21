@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './component/header/header';
+import Header from './component/header_fixed/header_fixed';
 import '../node_modules/@fortawesome/fontawesome-free/css/all.css';
 import * as serviceWorker from './serviceWorker';
 

@@ -1,0 +1,44 @@
+@import "src/styles/index";
+
+.header_fixed {
+    position: fixed;
+    z-index: 1;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    .navbar-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        background: #1e293b;
+        .nav-link {
+            color: white;
+            padding: 20px;
+            text-align: center;
+            transition: all ease-in .3s;
+            &:hover {
+                background: white;
+                color: #1e293b;
+            }
+            i {
+                display: block;
+                font-size: 22px;
+                margin-bottom: 5px;
+            }
+        }
+        .nav-item.active {
+            .nav-link {
+                background: white;
+                color: #1e293b;
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        right: initial;
+        top: 0;
+        .navbar-nav {
+            flex-direction: column;
+            height: 100%;
+        }
+    }
+}
