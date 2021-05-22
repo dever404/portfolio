@@ -7,10 +7,10 @@ function Technologies() {
     <div className='technologies'>
           <h1 > Technologies :  </h1>
           <hr className='my-4 my-lg-5' />
-          <div className='col-8 mx-auto'>
+          <div className='col-12 col-lg-8 mx-auto'>
             <div class="row">
               { data.map(item => (
-                  <div className="col-4 mb-4" >
+                  <div className="col-12 col-lg-4 mb-4" >
                     <div className="card h-100">
                       <div className="card-body">
                         <h6 className="card-title mb-2 "><b>{ item.name }</b></h6>
